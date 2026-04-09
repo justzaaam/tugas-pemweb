@@ -1,0 +1,328 @@
+ERROR - 2026-04-07 09:13:16 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: ERROR:  invalid value for parameter "client_encoding": "utf8mb4" in C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Database\Postgre\Connection.php:98
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Database\BaseConnection.php(555): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT "peserta...', Array, false)
+#3 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\app\Models\PesertaModel.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\app\Controllers\Peserta.php(13): App\Models\PesertaModel->getPesertaLengkap()
+#7 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\CodeIgniter.php(951): App\Controllers\Peserta->index()
+#8 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+#9 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2026-04-07 09:13:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: ERROR:  invalid value for parameter "client_encoding": "utf8mb4"
+[Method: GET, Route: peserta]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT "peserta".*, "provinsi"."nama_provinsi", "kabkot"."nama_kabkot"
+FROM "peserta"
+LEFT JOIN "provinsi" ON "provinsi"."id" = "peserta"."provinsi_id"
+LEFT JOIN "kabkot" ON "kabkot"."id" = "peserta"."kabkot_id"
+ORDER BY "peserta"."id" DESC', [], false)
+ 3 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\PesertaModel.php(17): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Peserta.php(13): App\Models\PesertaModel->getPesertaLengkap()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Peserta->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter4-framework-v4.7.2-0-gb3359be\\codeigniter4-framework-b3359be\\public\\index.php')
+ERROR - 2026-04-07 09:14:07 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: ERROR:  invalid value for parameter "client_encoding": "utf8mb4" in C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Database\Postgre\Connection.php:98
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Database\BaseConnection.php(555): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT "peserta...', Array, false)
+#3 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\app\Models\PesertaModel.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\app\Controllers\Peserta.php(13): App\Models\PesertaModel->getPesertaLengkap()
+#7 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\CodeIgniter.php(951): App\Controllers\Peserta->index()
+#8 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+#9 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2026-04-07 09:14:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: ERROR:  invalid value for parameter "client_encoding": "utf8mb4"
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT "peserta".*, "provinsi"."nama_provinsi", "kabkot"."nama_kabkot"
+FROM "peserta"
+LEFT JOIN "provinsi" ON "provinsi"."id" = "peserta"."provinsi_id"
+LEFT JOIN "kabkot" ON "kabkot"."id" = "peserta"."kabkot_id"
+ORDER BY "peserta"."id" DESC', [], false)
+ 3 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\PesertaModel.php(17): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Peserta.php(13): App\Models\PesertaModel->getPesertaLengkap()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Peserta->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter4-framework-v4.7.2-0-gb3359be\\codeigniter4-framework-b3359be\\public\\index.php')
+ERROR - 2026-04-07 09:14:09 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: ERROR:  invalid value for parameter "client_encoding": "utf8mb4" in C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Database\Postgre\Connection.php:98
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Database\BaseConnection.php(555): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT "peserta...', Array, false)
+#3 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\app\Models\PesertaModel.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\app\Controllers\Peserta.php(13): App\Models\PesertaModel->getPesertaLengkap()
+#7 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\CodeIgniter.php(951): App\Controllers\Peserta->index()
+#8 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+#9 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2026-04-07 09:14:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: ERROR:  invalid value for parameter "client_encoding": "utf8mb4"
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT "peserta".*, "provinsi"."nama_provinsi", "kabkot"."nama_kabkot"
+FROM "peserta"
+LEFT JOIN "provinsi" ON "provinsi"."id" = "peserta"."provinsi_id"
+LEFT JOIN "kabkot" ON "kabkot"."id" = "peserta"."kabkot_id"
+ORDER BY "peserta"."id" DESC', [], false)
+ 3 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\PesertaModel.php(17): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Peserta.php(13): App\Models\PesertaModel->getPesertaLengkap()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Peserta->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter4-framework-v4.7.2-0-gb3359be\\codeigniter4-framework-b3359be\\public\\index.php')
+ERROR - 2026-04-07 09:19:22 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: ERROR:  invalid value for parameter "client_encoding": "utf8mb4" in C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Database\Postgre\Connection.php:98
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Database\BaseConnection.php(555): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT "peserta...', Array, false)
+#3 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\app\Models\PesertaModel.php(17): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\app\Controllers\Peserta.php(13): App\Models\PesertaModel->getPesertaLengkap()
+#7 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\CodeIgniter.php(951): App\Controllers\Peserta->index()
+#8 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+#9 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\codeigniter4-framework-v4.7.2-0-gb3359be\codeigniter4-framework-b3359be\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2026-04-07 09:19:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: ERROR:  invalid value for parameter "client_encoding": "utf8mb4"
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT "peserta".*, "provinsi"."nama_provinsi", "kabkot"."nama_kabkot"
+FROM "peserta"
+LEFT JOIN "provinsi" ON "provinsi"."id" = "peserta"."provinsi_id"
+LEFT JOIN "kabkot" ON "kabkot"."id" = "peserta"."kabkot_id"
+ORDER BY "peserta"."id" DESC', [], false)
+ 3 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\PesertaModel.php(17): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Peserta.php(13): App\Models\PesertaModel->getPesertaLengkap()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Peserta->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter4-framework-v4.7.2-0-gb3359be\\codeigniter4-framework-b3359be\\public\\index.php')
+CRITICAL - 2026-04-07 09:25:25 --> ParseError: syntax error, unexpected token "public", expecting end of file
+[Method: GET, Route: /]
+in APPPATH\Controllers\Peserta.php on line 54.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\codeigniter4-framework-v4.7.2-0-gb3359be\\codeigniter4-framework-b3359be\\app\\Controllers\\Peserta.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Peserta')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Peserta')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\Peserta')
+ 5 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('/')
+ 7 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter4-framework-v4.7.2-0-gb3359be\\codeigniter4-framework-b3359be\\public\\index.php')
+ERROR - 2026-04-07 10:15:25 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;Laki-Laki&quot;
+LINE 1: ..., 'Kristen', 'JL.Raya, no 30', '098765432345678', 'Laki-Laki...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "peserta" ("nama", "tempatlahir", "tanggallahir", "agama", "alamat", "telepon", "jk", "hobi", "provinsi_id", "kabkot_id") VALUES (\'ucok\', \'madiun\', \'2026-03-30\', \'Kristen\', \'JL.Raya, no 30\', \'098765432345678\', \'Laki-Laki\', \'Menulis\', \'16\', \'49\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "peserta" ("nama", "tempatlahir", "tanggallahir", "agama", "alamat", "telepon", "jk", "hobi", "provinsi_id", "kabkot_id") VALUES (\'ucok\', \'madiun\', \'2026-03-30\', \'Kristen\', \'JL.Raya, no 30\', \'098765432345678\', \'Laki-Laki\', \'Menulis\', \'16\', \'49\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO "peserta" ("nama", "tempatlahir", "tanggallahir", "agama", "alamat", "telepon", "jk", "hobi", "provinsi_id", "kabkot_id") VALUES (:nama:, :tempatlahir:, :tanggallahir:, :agama:, :alamat:, :telepon:, :jk:, :hobi:, :provinsi_id:, :kabkot_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Peserta.php(41): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Peserta->simpan()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter4-framework-v4.7.2-0-gb3359be\\codeigniter4-framework-b3359be\\public\\index.php')
+CRITICAL - 2026-04-07 10:15:25 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;Laki-Laki&quot;
+LINE 1: ..., 'Kristen', 'JL.Raya, no 30', '098765432345678', 'Laki-Laki...
+                                                             ^
+[Method: POST, Route: peserta/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO "peserta" ("nama", "tempatlahir", "tanggallahir", "agama", "alamat", "telepon", "jk", "hobi", "provinsi_id", "kabkot_id") VALUES (:nama:, :tempatlahir:, :tanggallahir:, :agama:, :alamat:, :telepon:, :jk:, :hobi:, :provinsi_id:, :kabkot_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Peserta.php(41): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Peserta->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter4-framework-v4.7.2-0-gb3359be\\codeigniter4-framework-b3359be\\public\\index.php')
+CRITICAL - 2026-04-07 10:15:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;Laki-Laki&quot;
+LINE 1: ..., 'Kristen', 'JL.Raya, no 30', '098765432345678', 'Laki-Laki...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 212.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "peserta" ("nama", "tempatlahir", "tanggallahir", "agama", "alamat", "telepon", "jk", "hobi", "provinsi_id", "kabkot_id") VALUES (\'ucok\', \'madiun\', \'2026-03-30\', \'Kristen\', \'JL.Raya, no 30\', \'098765432345678\', \'Laki-Laki\', \'Menulis\', \'16\', \'49\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "peserta" ("nama", "tempatlahir", "tanggallahir", "agama", "alamat", "telepon", "jk", "hobi", "provinsi_id", "kabkot_id") VALUES (\'ucok\', \'madiun\', \'2026-03-30\', \'Kristen\', \'JL.Raya, no 30\', \'098765432345678\', \'Laki-Laki\', \'Menulis\', \'16\', \'49\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO "peserta" ("nama", "tempatlahir", "tanggallahir", "agama", "alamat", "telepon", "jk", "hobi", "provinsi_id", "kabkot_id") VALUES (:nama:, :tempatlahir:, :tanggallahir:, :agama:, :alamat:, :telepon:, :jk:, :hobi:, :provinsi_id:, :kabkot_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Peserta.php(41): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Peserta->simpan()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter4-framework-v4.7.2-0-gb3359be\\codeigniter4-framework-b3359be\\public\\index.php')
+CRITICAL - 2026-04-07 10:15:25 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;Laki-Laki&quot;
+LINE 1: ..., 'Kristen', 'JL.Raya, no 30', '098765432345678', 'Laki-Laki...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;Laki-Laki&quot;
+LINE 1: ..., \'Kristen\', \'JL.Raya, no 30\', \'098765432345678\', \'Laki-Laki...
+                                                             ^', 'C:\\xampp\\htdocs\\codeigniter4-framework-v4.7.2-0-gb3359be\\codeigniter4-framework-b3359be\\system\\Database\\Postgre\\Connection.php', 200)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(200): pg_query(Object(PgSql\Connection), 'INSERT INTO "peserta" ("nama", "tempatlahir", "tanggallahir", "agama", "alamat", "telepon", "jk", "hobi", "provinsi_id", "kabkot_id") VALUES (\'ucok\', \'madiun\', \'2026-03-30\', \'Kristen\', \'JL.Raya, no 30\', \'098765432345678\', \'Laki-Laki\', \'Menulis\', \'16\', \'49\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "peserta" ("nama", "tempatlahir", "tanggallahir", "agama", "alamat", "telepon", "jk", "hobi", "provinsi_id", "kabkot_id") VALUES (\'ucok\', \'madiun\', \'2026-03-30\', \'Kristen\', \'JL.Raya, no 30\', \'098765432345678\', \'Laki-Laki\', \'Menulis\', \'16\', \'49\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "peserta" ("nama", "tempatlahir", "tanggallahir", "agama", "alamat", "telepon", "jk", "hobi", "provinsi_id", "kabkot_id") VALUES (\'ucok\', \'madiun\', \'2026-03-30\', \'Kristen\', \'JL.Raya, no 30\', \'098765432345678\', \'Laki-Laki\', \'Menulis\', \'16\', \'49\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO "peserta" ("nama", "tempatlahir", "tanggallahir", "agama", "alamat", "telepon", "jk", "hobi", "provinsi_id", "kabkot_id") VALUES (:nama:, :tempatlahir:, :tanggallahir:, :agama:, :alamat:, :telepon:, :jk:, :hobi:, :provinsi_id:, :kabkot_id:)', [...], false)
+ 6 SYSTEMPATH\Model.php(355): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(668): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH\Controllers\Peserta.php(41): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Peserta->simpan()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter4-framework-v4.7.2-0-gb3359be\\codeigniter4-framework-b3359be\\public\\index.php')
+ERROR - 2026-04-07 10:20:40 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;Perempuan&quot;
+LINE 1: ...ya, no 30', &quot;telepon&quot; = '098765432345678', &quot;jk&quot; = 'Perempuan...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "peserta" SET "nama" = \'ucok\', "tempatlahir" = \'madiun\', "tanggallahir" = \'2026-03-30\', "agama" = \'Islam\', "alamat" = \'JL.Raya, no 30\', "telepon" = \'098765432345678\', "jk" = \'Perempuan\', "hobi" = \'Membaca\', "provinsi_id" = \'16\', "kabkot_id" = \'49\'
+WHERE "peserta"."id" IN (\'12\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "peserta" SET "nama" = \'ucok\', "tempatlahir" = \'madiun\', "tanggallahir" = \'2026-03-30\', "agama" = \'Islam\', "alamat" = \'JL.Raya, no 30\', "telepon" = \'098765432345678\', "jk" = \'Perempuan\', "hobi" = \'Membaca\', "provinsi_id" = \'16\', "kabkot_id" = \'49\'
+WHERE "peserta"."id" IN (\'12\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE "peserta" SET "nama" = :nama:, "tempatlahir" = :tempatlahir:, "tanggallahir" = :tanggallahir:, "agama" = :agama:, "alamat" = :alamat:, "telepon" = :telepon:, "jk" = :jk:, "hobi" = :hobi:, "provinsi_id" = :provinsi_id:, "kabkot_id" = :kabkot_id:
+WHERE "peserta"."id" IN :peserta.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\Peserta.php(74): CodeIgniter\Model->update('12', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Peserta->update()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter4-framework-v4.7.2-0-gb3359be\\codeigniter4-framework-b3359be\\public\\index.php')
+CRITICAL - 2026-04-07 10:20:40 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;Perempuan&quot;
+LINE 1: ...ya, no 30', &quot;telepon&quot; = '098765432345678', &quot;jk&quot; = 'Perempuan...
+                                                             ^
+[Method: POST, Route: peserta/update]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE "peserta" SET "nama" = :nama:, "tempatlahir" = :tempatlahir:, "tanggallahir" = :tanggallahir:, "agama" = :agama:, "alamat" = :alamat:, "telepon" = :telepon:, "jk" = :jk:, "hobi" = :hobi:, "provinsi_id" = :provinsi_id:, "kabkot_id" = :kabkot_id:
+WHERE "peserta"."id" IN :peserta.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Peserta.php(74): CodeIgniter\Model->update('12', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Peserta->update()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter4-framework-v4.7.2-0-gb3359be\\codeigniter4-framework-b3359be\\public\\index.php')
+CRITICAL - 2026-04-07 10:20:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;Perempuan&quot;
+LINE 1: ...ya, no 30', &quot;telepon&quot; = '098765432345678', &quot;jk&quot; = 'Perempuan...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 212.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "peserta" SET "nama" = \'ucok\', "tempatlahir" = \'madiun\', "tanggallahir" = \'2026-03-30\', "agama" = \'Islam\', "alamat" = \'JL.Raya, no 30\', "telepon" = \'098765432345678\', "jk" = \'Perempuan\', "hobi" = \'Membaca\', "provinsi_id" = \'16\', "kabkot_id" = \'49\'
+WHERE "peserta"."id" IN (\'12\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "peserta" SET "nama" = \'ucok\', "tempatlahir" = \'madiun\', "tanggallahir" = \'2026-03-30\', "agama" = \'Islam\', "alamat" = \'JL.Raya, no 30\', "telepon" = \'098765432345678\', "jk" = \'Perempuan\', "hobi" = \'Membaca\', "provinsi_id" = \'16\', "kabkot_id" = \'49\'
+WHERE "peserta"."id" IN (\'12\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE "peserta" SET "nama" = :nama:, "tempatlahir" = :tempatlahir:, "tanggallahir" = :tanggallahir:, "agama" = :agama:, "alamat" = :alamat:, "telepon" = :telepon:, "jk" = :jk:, "hobi" = :hobi:, "provinsi_id" = :provinsi_id:, "kabkot_id" = :kabkot_id:
+WHERE "peserta"."id" IN :peserta.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\Peserta.php(74): CodeIgniter\Model->update('12', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Peserta->update()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter4-framework-v4.7.2-0-gb3359be\\codeigniter4-framework-b3359be\\public\\index.php')
+CRITICAL - 2026-04-07 10:20:40 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;Perempuan&quot;
+LINE 1: ...ya, no 30', &quot;telepon&quot; = '098765432345678', &quot;jk&quot; = 'Perempuan...
+                                                             ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;Perempuan&quot;
+LINE 1: ...ya, no 30\', &quot;telepon&quot; = \'098765432345678\', &quot;jk&quot; = \'Perempuan...
+                                                             ^', 'C:\\xampp\\htdocs\\codeigniter4-framework-v4.7.2-0-gb3359be\\codeigniter4-framework-b3359be\\system\\Database\\Postgre\\Connection.php', 200)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(200): pg_query(Object(PgSql\Connection), 'UPDATE "peserta" SET "nama" = \'ucok\', "tempatlahir" = \'madiun\', "tanggallahir" = \'2026-03-30\', "agama" = \'Islam\', "alamat" = \'JL.Raya, no 30\', "telepon" = \'098765432345678\', "jk" = \'Perempuan\', "hobi" = \'Membaca\', "provinsi_id" = \'16\', "kabkot_id" = \'49\'
+WHERE "peserta"."id" IN (\'12\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "peserta" SET "nama" = \'ucok\', "tempatlahir" = \'madiun\', "tanggallahir" = \'2026-03-30\', "agama" = \'Islam\', "alamat" = \'JL.Raya, no 30\', "telepon" = \'098765432345678\', "jk" = \'Perempuan\', "hobi" = \'Membaca\', "provinsi_id" = \'16\', "kabkot_id" = \'49\'
+WHERE "peserta"."id" IN (\'12\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "peserta" SET "nama" = \'ucok\', "tempatlahir" = \'madiun\', "tanggallahir" = \'2026-03-30\', "agama" = \'Islam\', "alamat" = \'JL.Raya, no 30\', "telepon" = \'098765432345678\', "jk" = \'Perempuan\', "hobi" = \'Membaca\', "provinsi_id" = \'16\', "kabkot_id" = \'49\'
+WHERE "peserta"."id" IN (\'12\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE "peserta" SET "nama" = :nama:, "tempatlahir" = :tempatlahir:, "tanggallahir" = :tanggallahir:, "agama" = :agama:, "alamat" = :alamat:, "telepon" = :telepon:, "jk" = :jk:, "hobi" = :hobi:, "provinsi_id" = :provinsi_id:, "kabkot_id" = :kabkot_id:
+WHERE "peserta"."id" IN :peserta.id:', [...], false)
+ 6 SYSTEMPATH\Model.php(406): CodeIgniter\Database\BaseBuilder->update()
+ 7 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 8 SYSTEMPATH\Model.php(709): CodeIgniter\BaseModel->update([...], [...])
+ 9 APPPATH\Controllers\Peserta.php(74): CodeIgniter\Model->update('12', [...])
+10 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Peserta->update()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter4-framework-v4.7.2-0-gb3359be\\codeigniter4-framework-b3359be\\public\\index.php')

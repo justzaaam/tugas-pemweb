@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-layout">
+    <h1 class="level3">Nizam Al-Habsyi (09020624058)</h1>
+    <h3>Heading 3</h3>
+    <h6>Heading 6</h6>
+    <p class="level2">kuliah pertemuan 2 membahas tentang HTML dan CSS</p>
+    <img src="logo outnow.jpg" width="180" alt="logo"> 
+    
+
+    <div id="form-list">    
+        <p class="level3">materi yang dipelajari :</p>
+    <ol type="i">
+        <li class="level2">Basic HTML</li>
+            <ul>
+                <li class="level1">Heading
+                <ul>
+                    <li class="level1">head</li>
+                </ul>
+                </li>
+
+                <li class="level1">Paragraf</li>
+                <li class="level1">Image</li>
+            </ul>
+            </li>
+
+        <li class="level2">Basic CSS</li>
+
+    </ol>
+    </div>
+
+    <table style="border-collapse: collapse ;" border="1">
+        <tr >
+            <th>no</th>
+            <th>materi</th>
+            <th>tag</th>
+        </tr>   
+         <tr>
+        <td rowspan="6">1</td>
+        <td rowspan="6">Heading</td>
+        <td>h1</td>
+    </tr>
+    <tr>
+        <td>h2</td>
+    </tr>
+    <tr>
+        <td>h3</td>
+    </tr>
+    <tr>
+        <td>h4</td>
+    </tr>
+    <tr>
+        <td>h5</td>
+    </tr>
+    <tr>
+        <td>h6</td>
+    </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Image</td>
+            <td>img</td>
+        </tr>
+    </table>
+
+    <p>mohon masukkan materi perkuliahan</p>
+    <form>
+        <div id="form-nama">
+        <label>nama:</label> 
+        <input type="text" name="nama"><br>
+        </div>
+
+<div id="form-materi">
+        <label>materi:</label> 
+        <input type="radio" name="materi" value="HTML">HTML
+        <input type="radio" name="materi" value="CSS">CSS
+        <br>
+        </div>
+
+        <div id="form-masukan"> <label>masukan:</label> 
+        <input type="text" name="masukan"><br>
+        <input type="submit" value="submit">
+        </div>
+    </form>
+
+    <p>
+        Referensi : <a href="https://www.w3schools.com/html/default.asp" target="_blank">pembelajaran</a>
+    </p>
+    </div>
+</body>
+</html>
